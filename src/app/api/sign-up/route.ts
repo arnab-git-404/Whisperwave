@@ -1,6 +1,6 @@
 
 
-import dbConnect from '@/lib/dbConnect';
+import dbConnect from '@/lib/dbConnect.ts';
 import UserModel from '@/model/User';
 import bcrypt from 'bcryptjs';
 import { sendVerificationEmail } from '@/helper/sendVerificationEmail';

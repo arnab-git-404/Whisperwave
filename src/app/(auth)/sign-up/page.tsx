@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useDebounceValue, useDebounceCallback } from "usehooks-ts";
 import { useRouter } from "next/navigation";
-import { signUpSchema } from "@/schemas/signUpSchema";
+import { signUpSchema } from "@/schemas/signUpSchema.ts";
 import axios, { AxiosError } from "axios";
 import { ApiResponse } from "@/customTypes/ApiResponse";
 import { Button } from "@/components/ui/button";

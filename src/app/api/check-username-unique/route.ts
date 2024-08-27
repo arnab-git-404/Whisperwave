@@ -1,5 +1,5 @@
 import { usernameValidation } from "@/schemas/signUpSchema";
-import dbConnect from "@/lib/dbConnect";
+import dbConnect from "@/lib/dbConnect.ts";
 import UserModel from "@/model/User";
 import { z } from "zod";
 

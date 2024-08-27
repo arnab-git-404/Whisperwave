@@ -23,7 +23,7 @@ import * as z from "zod";
 import { ApiResponse } from "@/customTypes/ApiResponse";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { messageSchema } from "@/schemas/messageSchema";
+import { messageSchema } from "@/schemas/messageSchema.ts";
 
 const specialChar = "||";
 

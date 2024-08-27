@@ -16,7 +16,7 @@ import { Input } from '@/components/ui/input';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useToast } from '@/components/ui/use-toast';
-import { signInSchema } from '@/schemas/signInSchema.ts';
+import { signInSchema } from '@/schemas/signInSchema';
 
 export default function SignInForm() {
   const router = useRouter();

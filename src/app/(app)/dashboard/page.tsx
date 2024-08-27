@@ -14,7 +14,7 @@ import { User } from "next-auth";
 import { useSession } from "next-auth/react";
 import React, { useCallback, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
-import { AcceptMessageSchema } from "@/schemas/acceptMessageSchema.ts";
+import { AcceptMessageSchema } from "@/schemas/acceptMessageSchema";
 import { useRouter } from "next/navigation";
 
 

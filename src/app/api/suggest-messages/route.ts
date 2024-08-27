@@ -6,6 +6,8 @@ import { NextResponse } from "next/server";
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || "");
 
+const specialChar = "||";
+
 export async function POST(req: Request) {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
@@ -21,12 +23,13 @@ export async function POST(req: Request) {
     console.log(response);
 
     // return NextResponse.json({ response });
-   
-    return new NextResponse(response , {
-        headers: {
-          "Content-Type": "text/plain",
-        },
-      });
+   const responseArray = response.split(specialChar);
+    
+ return new NextResponse(JSON.stringify(responseArray), {
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
 
       // return new NextResponse(response, {
       //   headers: {

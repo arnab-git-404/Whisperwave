@@ -28,6 +28,7 @@ const specialChar = "||";
 
 const parseStringMessages = (messageString: string): string[] => {
   console.log("showing ", messageString.split(specialChar));
+  if (!messageString) return [];
   return messageString.split(specialChar);
 };
 

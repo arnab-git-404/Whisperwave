@@ -26,14 +26,17 @@ import { messageSchema } from "@/schemas/messageSchema";
 
 const specialChar = "||";
 
-const parseStringMessages = (messageString: string): string[] => {
-  console.log("showing ", messageString.split(specialChar));
-  if (!messageString) return [];
-  return messageString.split(specialChar);
+const parseStringMessages = (messages: string | string[]): string[] => {
+  if (Array.isArray(messages)) return messages;
+  if (!messages) return [];
+  return messages.split(specialChar);
 };
 
-const initialMessageString =
-  "What's your favorite movie?||Do you have any pets?||What's your dream job?";
+const initialMessages = [
+  "What's your favorite movie?",
+  "Do you have any pets?",
+  "What's your dream job?",
+];
 
 export default function SendMessage() {
   const params = useParams<{ username: string }>();
@@ -84,11 +87,14 @@ export default function SendMessage() {
     try {
       setAiMessages([]);
       setIsQuestionGetting(true);
-      const response = await axios.post<string[]>("/api/suggest-messages");
-      if (response) {
+
+      const response = await axios.post("/api/suggest-messages");
+      const responseArray = await response.data;
+      if (responseArray) {
         setIsQuestionGetting(false);
       }
-      setAiMessages(response.data);
+      setAiMessages(responseArray);
+      
     } catch (error) {
       console.error("Error fetching messages:", error);
       // Handle error appropriately
@@ -153,10 +159,10 @@ export default function SendMessage() {
           <CardContent className="flex flex-col space-y-4">
             {parseStringMessages(
               aimessages.length > 0
-                ? aimessages.join(specialChar)
+                ? aimessages
                 : isQuestionGetting
-                ? ""
-                : initialMessageString
+                ? []
+                : initialMessages
             ).map((message, index) => (
               <Button
                 key={index}

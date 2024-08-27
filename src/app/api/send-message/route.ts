@@ -1,4 +1,4 @@
-import dbConnect from "@/lib/dbConnect.ts";
+import dbConnect from "@/lib/dbConnect";
 import UserModel from "@/model/User";
 import { Message } from "@/model/User";
 

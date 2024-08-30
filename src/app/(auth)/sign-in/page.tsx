@@ -116,16 +116,13 @@ export default function SignInForm() {
             </Link>
           </p>
         </div>
+        
           <div className="flex items-center space-x-2 my-6">
-  <FcGoogle className="text-4xl" />
-  <Button className="w-full text-lg flex items-center justify-center space-x-2">
-    <FcGoogle className="text-lg" />
-    <span>Continue With Google</span>
-  </Button>
-  </div>
-
-
-
+              <Button className="w-full text-lg flex items-center justify-center space-x-2">
+              <FcGoogle className="text-lg" />
+              <span>Continue With Google</span>
+            </Button>
+          </div>
         
       </div>
     </div>

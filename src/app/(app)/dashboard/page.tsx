@@ -16,8 +16,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { AcceptMessageSchema } from "@/schemas/acceptMessageSchema";
 import { useRouter } from "next/navigation";
-import { Separator } from "@/components/ui/separator";
-import { FcGoogle } from "react-icons/fc";
 
 function UserDashboard() {
   const { data: session, status } = useSession();

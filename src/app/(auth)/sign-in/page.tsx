@@ -17,6 +17,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useToast } from '@/components/ui/use-toast';
 import { signInSchema } from '@/schemas/signInSchema';
+import { FcGoogle } from "react-icons/fc";
+import { Separator } from "@/components/ui/separator";
 
 export default function SignInForm() {
   const router = useRouter();
@@ -114,6 +116,17 @@ export default function SignInForm() {
             </Link>
           </p>
         </div>
+          <div className="flex items-center space-x-2 my-6">
+  <FcGoogle className="text-4xl" />
+  <Button className="w-full text-lg flex items-center justify-center space-x-2">
+    <FcGoogle className="text-lg" />
+    <span>Continue With Google</span>
+  </Button>
+  </div>
+
+
+
+        
       </div>
     </div>
   );

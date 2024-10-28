@@ -1,6 +1,8 @@
 # Whisperwave
 
-Whisperwave lets users send secret messages by creating profiles. Built with the MERN stack.
+Whisperwave is a secure messaging platform that allows users to send and receive secret messages. Built with the MERN stack for optimal performance and scalability.
+
+##  Whisperwave Live
 
 ## Tech Stack
 

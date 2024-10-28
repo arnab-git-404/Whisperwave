@@ -35,7 +35,7 @@ To start the development server, run:
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000] with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 Production
 To build the project for production, run:
@@ -56,10 +56,10 @@ npm run lint
 # Learn More
 To learn more about the tech stack, take a look at the following resources:
 
-Next.js Documentation
-React Documentation
-Node.js Documentation
-MongoDB Documentation
+- [Next.js Documentation](https://nextjs.org/docs)
+- React Documentation
+- Node.js Documentation
+- MongoDB Documentation
 
 ## Deploy on Vercel
 The easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js. Check out their Next.js deployment documentation for more details.

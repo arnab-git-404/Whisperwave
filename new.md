@@ -4,10 +4,10 @@ Whisperwave is a secure messaging platform that allows users to send and receive
 
 # Live View
 Check out the live version of Whisperwave here: [Whisperwave](https://whisperwave.vercel.app/)
-- 1. Click On Login Button 
-- 2. Register Yourself using SignUp
-- 3. You will get a Link Like this [ https://whisperwave.vercel.app/u/yourusername ]
-  4. share this link with your friends and Enjoy secrect messages  
+- Hit the Login Button to get started!
+- Register with SignUp to create your profile.
+- You’ll receive a unique link like this: [https://whisperwave.vercel.app/u/yourusername]
+- Share this link with friends and dive into a world of secret messaging! 🕵️‍♂️💬
 
 ## Tech Stack
 

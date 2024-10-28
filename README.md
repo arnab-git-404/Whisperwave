@@ -1,8 +1,8 @@
-## Whisperwave
+# Whisperwave
 
 Whisperwave is a secure messaging platform that allows users to send and receive secret messages. Built with the MERN stack for optimal performance and scalability.
 
-# Live View
+## Live View
 Check out the live version of Whisperwave here: [Whisperwave](https://whisperwave.vercel.app/)
 - Hit the Login Button to get started!
 - Register with SignUp to create your profile.

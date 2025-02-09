@@ -191,24 +191,6 @@ const Page = () => {
             </Link>
           </p>
         </div>
-
-<div className="flex items-center space-x-2 my-6">
-  <Button 
-    onClick={() => {
-      toast({
-        title: 'Not Available',
-        description: 'This Function is Under Development',
-        variant: 'default',
-      });
-    }} 
-    className="w-full text-lg flex items-center justify-center space-x-2"
-  >
-    <FcGoogle className="text-lg" />
-    <span>Continue With Google</span>
-  </Button>
-</div>
-
-        
       </div>
     </div>
   );
